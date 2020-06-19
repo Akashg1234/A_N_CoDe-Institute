@@ -159,6 +159,10 @@ a{text-decoration: none;}a:hover{text-decoration: none;}label{font-weight: bold;
      {
       $newPass=password_hash($pass2, PASSWORD_BCRYPT);
       $_SESSION['passw']=$newPass;
+      echo '<script>window.location.href="courseintructor.php";</script>';
+     }
+     else
+     {
       echo '<script>alert("Password are not same");</script>';
      }
    }
